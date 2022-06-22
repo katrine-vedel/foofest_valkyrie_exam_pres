@@ -1,0 +1,186 @@
+/*default mobile*/
+body{
+    background-image: linear-gradient(to bottom, #ffffff3a, #ffffff3a), url(img/extralong2.svg);
+    background-size: 100%;
+   
+    
+    
+}
+#schedule-form{
+    -webkit-appearance: none;
+    outline: solid 2px var(--secondary_bg_2);
+border: solid 7px var(--secondary_bg_4);
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: var(--primary_bg_3_fade);
+    box-shadow: var(--shadow_out);
+}
+
+#schedule{
+    margin: 1rem;
+    width:fit-content;
+}
+
+#schedule h1{
+    text-align: center;
+}
+/*obs day-indicator in mobile is only select element*/
+.day-indicator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -4.5rem;
+}
+.schedule-list{
+    background-color: var(--primary_bg_3);
+    box-shadow:var(--shadow_inset);
+ 
+}
+/*the buttons for choosing stage in mobile view*/
+.stage-buttons{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 3rem;
+    grid-gap: 8rem;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.stage-buttons button{
+    vertical-align:top;
+	transform:rotateZ(270deg);
+    font-size: 1rem;
+    width:10rem;    
+}
+
+.stage-buttons button:focus{
+    color: var(--btn_font_hover);
+    background-color: var(--btn_hover_bg);
+    box-shadow: var(--shadow_inset);
+}
+/*each cell in the table*/
+.table-cell{
+    padding: 0.9rem;
+    width: 19rem;
+    height:5rem;
+    background-color: var(--secondary_bg_4);
+    border-radius: var(--default-b-radius);
+    border: solid 2px var(--secondary_bg_2);
+}
+/*title of each table - the stagename*/
+.table-title{
+    padding: 1.6rem;
+    font-size: 1.3rem;
+}
+
+#time{
+    color: var(--primary_bg_1);
+    font-weight: bold;
+}
+
+#artist{
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;;
+}
+
+#artist:hover{
+    transform: scale(1.05);
+   
+
+}
+
+/* in mobile - wrapper for the stagebuttons and the single table*/
+#table-wrapper{
+    display:flex;
+    align-items: center;
+    margin:1rem 0;
+}
+
+#activeDay{
+    display: none;
+    transform: rotateZ(270deg);
+    font-size: 3rem;
+}
+
+#table2,#table3{
+    display: none;
+}
+
+/*-----desktop and tablets-----*/
+@media screen and (min-width: 768px)  {
+ 
+    #schedule-form{
+      
+        padding:2rem;
+    }
+
+    #table2,#table3{
+        display: block;
+    }
+
+    #schedule-form{
+        max-width: 43rem;
+    }
+
+   
+
+    .stage-buttons{
+        display: none;
+    }
+
+/*the dayindicatorr showing the active day as well as select*/
+.day-indicator{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20rem;
+    margin-bottom: 0;
+    max-width: 6rem;
+    justify-content: flex-start;
+}
+/*container for entire table*/
+.table-container{
+    display:flex;
+    grid-gap: 1rem;
+}
+
+select{
+    background: var(--primary_bg_1);
+border: solid 2px var(--secondary_bg_4);
+background: var(--primary_bg_1);
+border: solid 4px var(--secondary_bg_4);
+width: 8rem;
+border-radius: var(--default-b-radius);
+outline: solid 1px var(--secondary_bg_2);
+}
+
+/*wrapper round the three schedule tables, obs in desktop no stage buttons*/
+#table-wrapper{
+    display:flex;
+    grid-gap:10px;
+    align-items: flex-start;
+}
+
+
+#activeDay{
+    display: block;
+    transform: rotateZ(270deg);
+    font-size: 3rem;
+}
+  
+}
+
+.hidden{
+    display: none;
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media screen and (min-width: 992px) { 
+
+    #schedule-form{
+        max-width: 60rem;
+    }
+
+
+}

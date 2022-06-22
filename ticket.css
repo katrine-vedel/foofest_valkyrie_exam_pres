@@ -1,0 +1,181 @@
+
+  /* MOBILE DEFAULT */
+
+  body{
+    background-image: linear-gradient(to bottom, #ffffff3a, #ffffff3a), url(img/rightmountainlong.svg);
+    background-size: 170%;
+    background-position: 70% 91%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  }
+
+  main{
+    margin: 0 auto;
+   
+      min-height: 90vh;
+    }
+  
+  #tickets{
+   
+    width: 100%;
+
+  }
+
+  .ticket_grid{
+   
+    margin: 1rem auto;
+  }
+.regu_ticket{
+  margin: 1rem;
+  height: 8rem;
+  margin: 1rem;
+  background-image: url("ui_icons/ticket_done_01.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* FILLOUT STYLING */
+.select_ticket{
+  display: flex;
+}
+
+.tent_grid{
+  margin: 0 auto;
+}
+
+
+
+.text_t_p{
+  margin: 0 auto;
+  padding: 0.1rem;
+  margin: 1rem;
+  background-color: var(--primary_bg_3_fade);
+  border: solid 7px var(--secondary_bg_1);
+  outline: solid 2px var(--secondary_bg_2);
+  border-radius: var(--default-b-radius);
+  box-shadow: var(--shadow_out);
+}
+
+.regu_fillout{
+  display: none;
+  max-width: 90%;
+  margin: 0 auto;
+  outline: solid 5px var(--secondary_bg_1);
+  padding: 0.5rem;
+  background-color: var(--primary_bg_1);
+  box-shadow: /* var(--shadow_inset), */ var(--shadow_out);
+}
+
+.tent_two_p, .tent_four_p, .select_ticket{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.underline{
+  border-bottom: dashed 2px black;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  cursor: context-menu;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  cursor: context-menu;
+  width: 2.8rem;
+  margin: 0 auto;
+}
+
+.ticket_buy_wrapper {
+  display: grid;
+  justify-content: center;
+  padding: 1.5rem;
+  }
+
+.tent{
+  margin: 0 auto;
+}
+
+.reg_amount, .vip_amount, .tent_two_amount, .tent_four_amount{
+  gap: 0.5rem;
+  display: flex;
+justify-content: right;
+align-items: center;
+} 
+.amount_btn{
+width: 2rem;
+height: 2rem;
+padding: 0;
+}
+
+.closeVip, .closeRegu{
+  cursor: pointer;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px){
+  body{
+    background-size: 140%;
+    background-position: 80% 100%;
+  
+  }
+  
+  .regu_ticket{
+    cursor: pointer;
+    height: 14rem;
+    transition: 1s;
+    animation: none;
+    filter: stroke(2px);
+    filter: drop-shadow(4px 6px 5px #00000070);
+}
+  
+    .regu_ticket:hover{
+        transform: rotate(-0.5deg);
+        transition: 1s;
+        transform: rotate(-2deg);
+        transition: 1s;
+
+    }
+
+
+
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) {
+  body{
+    background-size: 100%;
+    background-position: 0% 65%;
+  
+  }
+
+  #tickets{
+    width: 60rem;
+    margin: 0 auto;
+  }
+    .regu_ticket{
+        margin: 0 auto;
+        height:18rem;
+        transition: 1s;
+        animation: none;
+    }
+    .regu_ticket:hover{
+        transform: rotate(-2deg);
+        transition: 1s;
+        animation: none;
+
+    }
+    .regu_fillout{
+      width: 30rem;
+    }  
+}  
