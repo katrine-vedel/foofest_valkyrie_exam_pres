@@ -297,7 +297,7 @@ a {
   text-decoration: none;
   -webkit-text-stroke-color: var(--secondary_bg_2);
   -webkit-text-stroke-width: 1.3px;
-  transition: 12s;
+  transition: 1s;
 }
 
 nav a{
