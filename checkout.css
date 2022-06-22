@@ -185,7 +185,6 @@ td {
   background-image:url("ui_icons/a4.svg");
   background-size: 100%;
   background-position: center;
-  background-attachment: fixed;
   background-color: transparent;
   background-repeat: no-repeat;
 }
