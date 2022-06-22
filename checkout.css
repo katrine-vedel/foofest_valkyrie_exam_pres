@@ -160,14 +160,14 @@ td {
 }
 
 .c_b {
-  background-image:url("ui_icons/a\ –\ 1.svg");
+  background-image:url("ui_icons/a1.svg");
   background-size: 100%;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
 }
 .c_c {
-  background-image:url("ui_icons/a\ –\ 2.svg");
+  background-image:url("ui_icons/a2.svg");
   background-size: 100%;
   background-position: center;
   background-color: transparent;
@@ -175,16 +175,17 @@ td {
 }
 
 .c_d {
-  background-image:url("ui_icons/a\ –\ 3.svg");
+  background-image:url("ui_icons/a3.svg");
   background-size: 100%;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
 }
 .c_e {
-  background-image:url("ui_icons/a\ –\ 4.svg");
+  background-image:url("ui_icons/a4.svg");
   background-size: 100%;
   background-position: center;
+  background-attachment: fixed;
   background-color: transparent;
   background-repeat: no-repeat;
 }

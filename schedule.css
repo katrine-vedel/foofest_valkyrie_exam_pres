@@ -2,6 +2,7 @@
 body{
     background-image: linear-gradient(to bottom, #ffffff3a, #ffffff3a), url(img/extralong2.svg);
     background-size: 100%;
+    background-attachment: fixed;
    
     
     

@@ -31,6 +31,7 @@
   height: 8rem;
   margin: 1rem;
   background-image: url("ui_icons/ticket_done_01.svg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   cursor: pointer;
 }
